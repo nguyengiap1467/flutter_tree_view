@@ -232,7 +232,7 @@ class _SliverAnimatedTreeState<T extends Object>
 
   @override
   Widget build(BuildContext context) {
-    return SliverList.builder(
+    return ListView.builder(
       itemCount: _flatTree.length,
       itemBuilder: (BuildContext context, int index) {
         final TreeEntry<T> entry = _flatTree[index];

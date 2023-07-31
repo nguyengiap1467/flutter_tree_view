@@ -351,13 +351,7 @@ class FolderButton extends StatelessWidget {
         transitionBuilder: transitionBuilder,
         child: KeyedSubtree(
           key: Key('FolderButton#$isOpen'),
-          child: switch (isOpen) {
-            null => icon,
-            true => openedIcon,
-            false => closedIcon,
-          },
-        ),
-      ),
-    );
+          child:
+          isOpen == true ? openedIcon : (isOpen == false ? closedIcon : const SizedBox.shrink()))));
   }
 }

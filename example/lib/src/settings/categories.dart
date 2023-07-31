@@ -87,7 +87,7 @@ class ColorSelector extends StatelessWidget {
     return ExpansionTile(
       title: const Text('Theme Color'),
       trailing: ColorOption(color: selectedColor, canTap: false),
-      shape: const RoundedRectangleBorder(side: BorderSide.none),
+      //shape: const RoundedRectangleBorder(side: BorderSide.none),
       tilePadding: const EdgeInsets.symmetric(horizontal: 16),
       childrenPadding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
       children: [
@@ -270,7 +270,7 @@ class IndentGuideType extends StatelessWidget {
           color: Theme.of(context).colorScheme.primary,
         ),
       ),
-      shape: const RoundedRectangleBorder(side: BorderSide.none),
+      //shape: const RoundedRectangleBorder(side: BorderSide.none),
       children: [
         for (final type in IndentType.allExcept(indentType))
           ListTile(

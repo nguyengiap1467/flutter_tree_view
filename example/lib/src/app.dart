@@ -49,7 +49,7 @@ class AppView extends StatelessWidget {
     Widget? drawer;
 
     if (MediaQuery.of(context).size.width > 720) {
-      body = const Row(
+      body = Row(
         children: [
           SettingsView(),
           VerticalDivider(width: 1),
